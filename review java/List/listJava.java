@@ -22,6 +22,7 @@ public class Solution {
             in.nextLine();
             String command = in.nextLine();
             // System.out.println("command: " + command);
+            // compare command
             if (command.equals("Insert")) {
                 int index = in.nextInt();
                 // System.out.println("index: " + index);
