@@ -2,8 +2,8 @@ package Composition;
 
 public class Composition {
     public static void main(String[] args) {
-        Dimension dimension = new Dimension(20,20,5);
-        Case theCase = new Case("220B","Dell","240",dimension);
+        Dimension dimension = new Dimension(20, 20, 5);
+        Case theCase = new Case("220B", "Dell", "240", dimension);
 
         Monitor theMonitor = new Monitor("27inch Beast", "Acer", 27, new Resolution(2540, 1440));
 
@@ -18,8 +18,9 @@ public class Composition {
 
         Ceiling ceiling = new Ceiling(12, 55);
 
-        Bed bed = new Bed("Modern",4,3,2,1);
-        Lamp lamp = new Lamp("Classic",false,75);
+        // create the composition
+        Bed bed = new Bed("Modern", 4, 3, 2, 1);
+        Lamp lamp = new Lamp("Classic", false, 75);
         Bedroom bedroom = new Bedroom("Tims", wall1, wall2, wall3, wall4, ceiling, bed, lamp);
         bedroom.makeBed();
 
