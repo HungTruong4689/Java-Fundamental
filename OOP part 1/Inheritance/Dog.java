@@ -22,6 +22,7 @@ public class Dog extends Animal {
         System.out.println("Dog.chew() called");
     }
 
+    // override to create again the method
     @Override
     public void eat() {
         System.err.println("Dog.eat() called");
