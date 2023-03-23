@@ -13,15 +13,16 @@ class Result {
      *
      * The function is expected to return a STRING.
      * The function accepts following parameters:
-     *  1. INTEGER month
-     *  2. INTEGER day
-     *  3. INTEGER year
+     * 1. INTEGER month
+     * 2. INTEGER day
+     * 3. INTEGER year
      */
 
+    // date and time
     public static String findDay(int month, int day, int year) {
         Calendar cal = Calendar.getInstance();
-                    cal.set(year, month-1, day);
-        String dayOfWeek = cal.getDisplayName(Calendar.DAY_OF_WEEK,    Calendar.LONG, Locale.US).toUpperCase();
+        cal.set(year, month - 1, day);
+        String dayOfWeek = cal.getDisplayName(Calendar.DAY_OF_WEEK, Calendar.LONG, Locale.US).toUpperCase();
         return dayOfWeek;
     }
 
