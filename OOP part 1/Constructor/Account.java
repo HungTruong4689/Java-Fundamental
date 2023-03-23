@@ -23,6 +23,7 @@ public class Account {
         this.customerPhoneNumber = customerPhoneNumber;
     }
 
+    // create the method
     public void deposit(double depositAmount) {
         this.balance += depositAmount;
         System.out.println("Deposit of " + depositAmount + " made. New balance is " + this.balance);
