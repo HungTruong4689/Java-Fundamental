@@ -13,6 +13,7 @@ public class Account {
         System.out.println("Empty constructor created!");
     }
 
+    // set params constructor
     public Account(String number, double balance, String customerName, String customerEmailAddress,
             String customerPhoneNumber) {
         this.number = number;
